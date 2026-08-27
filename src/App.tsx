@@ -3,6 +3,7 @@ import { TrackerPage } from './pages/TrackerPage'
 import { ConsultPage } from './pages/ConsultPage'
 import { HistoryPage } from './pages/HistoryPage'
 import { ToastContainer } from './components/Toast'
+import { InstallPrompt } from './components/InstallPrompt'
 import './styles.css'
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
   return (
     <div className="app-shell">
       <ToastContainer />
+      <InstallPrompt />
 
       <div className="content fade-in-tab" key={tab}>
         {tab === 'tracker' && <TrackerPage />}
